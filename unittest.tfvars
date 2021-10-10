@@ -1,6 +1,6 @@
 name        = "setting_up_cs_test"
 description = "Setting up CS, A human-readable description for the job"
-project     = "flash-proxy-307407"
+project     = "PROJECT_ID"
 # pubsub_target = {
 #   topic_name = "projects/my-project/topics/my-topic"
 #   data       = "{\"hello\": \"world\"}"
