@@ -35,10 +35,10 @@ jobs:
           tf_actions_working_dir: "./test/"
           tf_actions_comment: true
 
-      - name: Terraform Plan
+      - name: Terraform Validate
         uses: hashicorp/terraform-github-actions@master
         with:
           tf_actions_version: 0.14.0
-          tf_actions_subcommand: "plan"
+          tf_actions_subcommand: "validate"
           tf_actions_working_dir: "./test/"
           tf_actions_comment: true
