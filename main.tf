@@ -3,6 +3,7 @@ resource "google_cloud_scheduler_job" "cloud_scheduler_job" {
   description = var.description # (Optional) 
   project     = var.project     # (Required) Current project
   region      = var.region      # (Optional) Region where the scheduler job resides. 
+  schedule    = var.schedule    # (Required) Schedule
 
   # The value of this field must be a time zone name from the tz database.
   time_zone = var.time_zone # (Optional) Specifies the time zone to be used in interpreting schedule.

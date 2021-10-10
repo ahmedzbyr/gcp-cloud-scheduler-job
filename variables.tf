@@ -3,6 +3,12 @@ variable "name" {
   type        = string
 }
 
+variable "schedule" {
+  description = "schedule for the job"
+  type        = string
+}
+
+
 variable "description" {
   description = "A human-readable description for the job. This string must not contain more than 500 characters."
   type        = string
@@ -16,7 +22,7 @@ variable "description" {
 variable "time_zone" {
   description = "Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the tz database."
   type        = string
-  default     = null
+  default     = "Etc/UTC"
 }
 
 variable "retry_config" {
