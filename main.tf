@@ -57,6 +57,7 @@ resource "google_cloud_scheduler_job" "cloud_scheduler_job" {
         }
       }
 
+      # (Optional) Contains information needed for generating an OpenID Connect token. 
       dynamic "oidc_token" {
         for_each = lookup(http_target.value, "oidc_token", null) == null ? [] : [http_target.value["oidc_token"]]
         content {
